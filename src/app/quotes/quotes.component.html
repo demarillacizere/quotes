@@ -1,4 +1,9 @@
 <div class="container">
     <h2>Quotes App</h2>
-    <app-quote-form></app-quote-form>
+    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    <div *ngFor='let quote of quotes;let i = index'>
+        <p id="{{i}}">{{quote.id}}) "{{quote.quoteWords}}" - {{quote.author}}</p>
+        <button (click)='voteUp()'>{{upvote}}</button>&nbsp;&nbsp;<button (click)='voteDown()'>{{downvote}}</button><br><br>
+        <app-quote-details (addQuote)="addNewQuote($event)"></app-quote-details><br>
+    </div>
 </div>
