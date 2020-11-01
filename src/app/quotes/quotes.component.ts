@@ -22,6 +22,15 @@ export class QuotesComponent implements OnInit {
   toogleDetails(index){
     this.quotes[index].showDescription =!this.quotes[index].showDescription;
 }
+deleteQuote(isComplete, index){
+  if (isComplete) {
+    let toDelete = confirm(`Are you sure you want to delete this quote?`)
+
+    if (toDelete){
+      this.quotes.splice(index,1)
+    }
+  }
+}
 downvote=0;
 upvote=0
 
