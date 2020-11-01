@@ -1,7 +1,8 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="container">
-    <button class='btn btn-outline-primary'>Quote details</button>
-    <h2 style="font-family: 'Viga', sans-serif;" >{{quote.author}}</h2>
     <div>
-        <p>Posted {{quote.author}} days ago by {{quote.name}}</p>
+        <p>Posted {{quote.dateUploaded|timeCount}} days ago by {{quote.name}}</p>
     </div>
+    <i class="fa fa-thumbs-up" (click)='voteUp(quote.id)'> {{upvote}}</i>&nbsp;&nbsp;
+    <i class="fa fa-thumbs-down" (click)='voteDown()'> {{downvote}}</i><br><br>
 </div>
