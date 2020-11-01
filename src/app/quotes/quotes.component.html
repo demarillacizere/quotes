@@ -12,17 +12,20 @@
     </div>
 </header>
 <div class="container">
-    <div id="quoteform"><app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form></div><br>
     <div class='row container'>
-        <div id="quotediv">
+        <div id="quoteform" class="col-sm-4"><app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form></div><br>
+        <div id="quotediv" class="col-sm-8">
             <div *ngFor='let quote of quotes;let i = index'>
                 <div>
-                    <div><span id="{{i}}">{{quote.id}}. "{{quote.quoteWords}}"</span></div>
+                    <div>
+                        <span id="{{i}}" appHigherUpvotes *ngIf="highestUpvote()===quote.upvotes && quote.upvotes>0">{{quote.id}}. "{{quote.quoteWords}}"</span>
+                        <span id="{{i}}" *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">{{quote.id}}. "{{quote.quoteWords}}"</span>
+                    </div>
                         <div style="text-align:right"><strong>-{{quote.author}}</strong></div>
                     <span (click)='toogleDetails(i)' class="container details">Quote details</span><br><br>
                 </div>    
-                <div *ngIf="quote.showDescription" >
-                  <app-quote-details  (addQuote)="addNewQuote($event)" [quote]='quote'></app-quote-details>
+                <div *ngIf="quote.showDescription">
+                  <app-quote-details  (addQuote)="addNewQuote($event)" [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
                 </div>
             </div>  
         </div> 

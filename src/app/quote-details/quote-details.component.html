@@ -3,7 +3,7 @@
     <div>
         <p>Posted {{quote.dateUploaded|timeCount}} days ago by {{quote.name}}</p>
     </div>
-    <i class="fa fa-thumbs-up" (click)='voteUp(quote.id)'> {{upvote}}</i>&nbsp;&nbsp;
-    <i class="fa fa-thumbs-down" (click)='voteDown()'> {{downvote}}</i>&nbsp;&nbsp;<span (click)='quoteDelete(true)' class='btn-danger'>Delete Quote</span>
+    <i class="fa fa-thumbs-up" (click)='voteUp()'> {{quote.upvote}}</i>&nbsp;&nbsp;
+    <i class="fa fa-thumbs-down" (click)='voteDown()'> {{quote.downvote}}</i>&nbsp;&nbsp;<span (click)='quoteDelete(true)' class='btn-danger'>Delete Quote</span>
     <br><br>
 </div>

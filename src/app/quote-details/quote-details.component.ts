@@ -14,15 +14,13 @@ export class QuoteDetailsComponent implements OnInit {
   quoteDelete(complete:boolean){
     this.isComplete.emit(complete);
   }
-downvote=0;
-upvote=0
 
 voteDown(){
-  this.downvote=this.downvote+1;
+  this.quote.downvote=this.quote.downvote+1;
 }
 
-voteUp(x){
-  this.upvote=this.upvote+1;
+voteUp(){
+  this.quote.upvote=this.quote.upvote+1;
 }
 
 

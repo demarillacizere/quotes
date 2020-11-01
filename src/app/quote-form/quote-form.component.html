@@ -2,11 +2,11 @@
     <h4>Share your favorite quote</h4><br>
     <form (ngSubmit)='SubmitQuote()' #quoteForm='ngForm' class='form-group container' >
         <div>
-            <div><label>Enter your name</label></div>
+            <div><label>Your name</label></div>
             <div><input class='form-control' type="text" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required></div>
         </div><br>
         <div>
-            <div><label>Enter the quote</label></div>
+            <div><label>The quote</label></div>
             <div><textarea class='form-control' rows='6' id="quoteWords" [(ngModel)]="newQuote.quoteWords" name="quotewords" #quoteWords='ngModel' required></textarea></div>
         </div><br>
         <div>

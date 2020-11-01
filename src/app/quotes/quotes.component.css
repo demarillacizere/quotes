@@ -40,8 +40,7 @@ nav a:hover{
 }
 #quoteform,#quotediv{
     margin-top:30px;
-    padding-right:150px;
-    padding-left:150px;
+    margin-bottom: 30px;
 }
 .details{
     background-color:rgb(36, 42, 43);
