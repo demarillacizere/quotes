@@ -1,15 +1,21 @@
 header{
     display: flex;
+    width:100%;
+    justify-content: space-between;
+    background-color:lightskyblue;
+    position: relative;
+    padding:15px;
     
 }
 nav{
     text-align: right;
 }
-nav ul{
-   display: inline-block;
-   margin-right:15px;
+nav li{
+    display: inline-block;
+   margin-right:25px;
+   list-style: none;
 }
 nav a{
     text-decoration:none;
-    color:cyan;
+    color:black;
 }
