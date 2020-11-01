@@ -1,18 +1,18 @@
-<div class="container">
-    <h4>Submit a quote</h4>
-    <form (ngSubmit)='SubmitQuote()' #quoteForm='ngForm' class='form-group' >
+<div class="container quotes">
+    <h4><center>Share your favorite quote</center></h4><br>
+    <form (ngSubmit)='SubmitQuote()' #quoteForm='ngForm' class='form-group container' >
         <div>
             <div><label>Enter your name</label></div>
             <div><input class='form-control' type="text" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required></div>
         </div><br>
         <div>
             <div><label>Enter the quote</label></div>
-            <div><textarea class='form-control' row='5' id="quoteWords" [(ngModel)]="newQuote.quoteWords" name="quotewords" #quoteWords='ngModel' required></textarea></div>
+            <div><textarea class='form-control' rows='6' id="quoteWords" [(ngModel)]="newQuote.quoteWords" name="quotewords" #quoteWords='ngModel' required></textarea></div>
         </div><br>
         <div>
             <div><label>The quote's author</label></div>
             <div><input class='form-control' type="text" id="author" [(ngModel)]="newQuote.author" name="author" #author='ngModel' required></div>
         </div><br>
-        <button type="submit" class='btn btn-outline-secondary'>Submit</button>
+        <button type="submit" class='btn btn-outline-secondary form-control'>Submit</button>
     </form>
 </div>

@@ -12,14 +12,14 @@
     </div>
 </header>
 <div class="container">
-    <div id="quoteform"><app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form></div>
-    <div class='row'>
+    <div id="quoteform"><app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form></div><br>
+    <div class='row container'>
         <div id="quotediv">
             <div *ngFor='let quote of quotes;let i = index'>
                 <div>
                     <div><span id="{{i}}">{{quote.id}}) "{{quote.quoteWords}}"</span></div>
                         <div style="text-align:right"><strong>-{{quote.author}}</strong></div>
-                    <p (click)='toogleDetails(i)'>Quote details</p>
+                    <p (click)='toogleDetails(i)' class="container">Quote details</p>
                 </div>    
                 <div *ngIf="quote.showDescription" >
                   <app-quote-details  (addQuote)="addNewQuote($event)" [quote]='quote'></app-quote-details>

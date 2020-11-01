@@ -40,9 +40,18 @@ nav a{
     padding-right:150px;
     padding-left:150px;
 }
+
 footer{
     text-align:center;
     background-color: rgb(220,220,220);
     padding:30px;
     color:rgb(70,70,70);
 }
+@media only screen and (max-width: 992px) {
+    #quoteform,#quotediv{
+      padding:0;
+    }
+    nav{
+        display: none;
+    }
+  }
