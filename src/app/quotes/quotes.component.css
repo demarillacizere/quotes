@@ -21,3 +21,9 @@ nav a{
     text-decoration:none;
     color:white;
 }
+footer{
+    text-align:center;
+    background-color: rgb(220,220,220);
+    padding:30px;
+    color:rgb(70,70,70);
+}
