@@ -17,7 +17,7 @@
         <div id="quotediv">
             <div *ngFor='let quote of quotes;let i = index'>
                 <div>
-                    <div><span id="{{i}}">{{quote.id}}) "{{quote.quoteWords}}"</span></div>
+                    <div><span id="{{i}}">{{quote.id}}. "{{quote.quoteWords}}"</span></div>
                         <div style="text-align:right"><strong>-{{quote.author}}</strong></div>
                     <p (click)='toogleDetails(i)' class="container">Quote details</p>
                 </div>    
