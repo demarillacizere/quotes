@@ -35,7 +35,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 
 ## Live Demo
-To view the page click here: [QUOTES](https://demarillacizere.github.io/quotes/)
+To view the page click here: [QuotesApp](https://demarillacizere.github.io/quotes/)
 
 ## Technology Used
 + Angular JS
