@@ -19,7 +19,7 @@
                 <div>
                     <div><span id="{{i}}">{{quote.id}}. "{{quote.quoteWords}}"</span></div>
                         <div style="text-align:right"><strong>-{{quote.author}}</strong></div>
-                    <p (click)='toogleDetails(i)' class="container">Quote details</p>
+                    <span (click)='toogleDetails(i)' class="container details">Quote details</span><br><br>
                 </div>    
                 <div *ngIf="quote.showDescription" >
                   <app-quote-details  (addQuote)="addNewQuote($event)" [quote]='quote'></app-quote-details>

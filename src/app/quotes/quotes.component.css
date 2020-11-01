@@ -35,17 +35,30 @@ nav a{
     text-decoration:none;
     color:white;
 }
+nav a:hover{
+    color:yellow;
+}
 #quoteform,#quotediv{
     margin-top:30px;
     padding-right:150px;
     padding-left:150px;
 }
+.details{
+    background-color:rgb(36, 42, 43);
+    padding:5px;
+    color:white;
+    border-radius:5px;
 
+}
+.details:hover{
+    background-color: rgb(233, 230, 62);
+    color:rgb(49, 58, 59);
+}
 footer{
     text-align:center;
-    background-color: rgb(220,220,220);
+    background-color: rgb(36, 42, 43);
     padding:30px;
-    color:rgb(70,70,70);
+    color:white;
 }
 @media only screen and (max-width: 992px) {
     #quoteform,#quotediv{

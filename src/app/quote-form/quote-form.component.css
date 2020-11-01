@@ -1,8 +1,16 @@
 .quotes{
     box-shadow:3px 3px 5px silver;
     padding:20px;
-    background-color:rgb(200, 216, 216);
+    background-color:rgb(99, 124, 124);
+    color:white;
+    border-radius:5px;
 }
 h4{
     text-align:center;
+}
+button{
+    background-color:rgb(233, 230, 62);
+}
+button:hover{
+    background-color: darkgray;
 }
