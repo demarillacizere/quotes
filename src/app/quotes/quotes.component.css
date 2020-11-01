@@ -1,13 +1,27 @@
 header{
-    display: flex;
-    width:100%;
-    justify-content: space-between;
-    background-color:rgb(64, 204, 209);
+    
     position: relative;
     padding-top:15px;
     padding-left:30px;
     color:white;
+    background-image: url('https://cdn.shopify.com/s/files/1/0070/7032/files/Mark_Twain.png?format=jpg&quality=90&v=1600449320');
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position: top;
+    height:63vh;
     
+}
+#header-div{
+    padding-top:20px;
+    padding-left:30px;
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    background-color:rgb(64, 204, 209);
+    position:absolute;
+    top:0;
+    left:0;
+
 }
 nav{
     text-align: right;
@@ -20,6 +34,11 @@ nav li{
 nav a{
     text-decoration:none;
     color:white;
+}
+#quoteform,#quotediv{
+    margin-top:30px;
+    padding-right:150px;
+    padding-left:150px;
 }
 footer{
     text-align:center;
