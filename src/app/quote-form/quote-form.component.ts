@@ -15,9 +15,6 @@ export class QuoteFormComponent implements OnInit {
 
   SubmitQuote(){
   this.addQuote.emit(this.newQuote);
-  this.newQuote.name='';
-  this.newQuote.quoteWords='';
-  this.newQuote.author='';
   }
   constructor() { }
 
