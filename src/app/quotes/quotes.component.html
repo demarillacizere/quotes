@@ -18,8 +18,8 @@
             <div *ngFor='let quote of quotes;let i = index' id="quote">
                 <div>
                     <div>
-                        <span id="{{i}}" >{{quote.id}}. "{{quote.quoteWords}}"</span>
-                        <!-- <span id="{{i}}" *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">{{quote.id}}. "{{quote.quoteWords}}"</span> -->
+                        <span id="{{i}}" appHigherUpvotes *ngIf="HighestUpvote()===quote.upvote && quote.upvote>0">{{quote.id}}. "{{quote.quoteWords}}"</span>
+                        <span id="{{i}}" *ngIf="HighestUpvote()!==quote.upvote || quote.upvote===0">{{quote.id}}. "{{quote.quoteWords}}"</span>
                     </div>
                         <div style="text-align:right"><strong>-{{quote.author}}</strong></div>
                     <span (click)='toogleDetails(i)' class="container details">Quote details</span><br><br>
